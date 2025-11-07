@@ -7,6 +7,12 @@ __pycache__/
 *.pyc
 *.pyo
 
+# Local configuration / secrets
+env.toml
+
+# Logs
+logs/
+
 # TLA+ states
 states/
 
@@ -15,3 +21,7 @@ outputs/
 
 # Virtual environment
 .venv/
+
+# Repository caches downloaded during tasks
+sysmobench_core/data/repositories/
+sysmobench_core/lib
