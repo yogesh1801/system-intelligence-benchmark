@@ -7,9 +7,6 @@ __pycache__/
 *.pyc
 *.pyo
 
-# Local configuration / secrets
-env.toml
-
 # Logs
 logs/
 
