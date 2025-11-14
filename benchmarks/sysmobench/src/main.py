@@ -42,7 +42,7 @@ def run_evaluation(task, method, model_name, max_iterations=3):
         return {'success': False, 'error': gen_result.error_message, 'final_score': 0.0}
 
     current_spec = gen_result.tla_specification
-    current_gen = gen_result
+    current_gen = GenerationResult(current_spec, gen_result.metadata, time.time(), True)
 
     # Evaluators
     comp_eval = CompilationCheckEvaluator(validation_timeout=60)
